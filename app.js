@@ -1,6 +1,14 @@
 let submitButton = document.getElementById('submit');
+let tag = document.getElementsByClassName("jsCalendar-current");
+let text = document.createElement("H1");
+text.innerHTML = "new string element";
+console.log(tag.length);
 
-submitButton.addEventListener('click', postTwo);
+for (var i = 0; i < tag.length; i++) {
+    tag[i].innerText = "Hello JavaScript!";    // Change the content
+}
+
+// submitButton.addEventListener('click', postTwo);
 
 // async function postOne(e) {
 
